@@ -2,10 +2,10 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-# In-memory database
+
 books = []
 
-# Book model
+
 class Book:
     def __init__(self, id, book_name, author, publisher):
         self.id = id
